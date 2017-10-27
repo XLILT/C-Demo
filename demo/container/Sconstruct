@@ -1,0 +1,16 @@
+STT_INC = '/home/zhang/stt/addon/inc'
+STT_LIB_R = '/home/zhang/stt/addon/lib/release'
+#STT_BIN = '/home/zhang/stt/bin'
+BOOST_INC = '/home/zhang/stt/boost/include'
+BOOST_LIB = '/home/zhang/stt/boost/lib'
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+MONGO_CXX_DRV_INC = '/root/mongo-cxx-driver/mongo-cxx-driver/build/install/include'
+MONGO_CXX_DRV_LIB = '/root/mongo-cxx-driver/mongo-cxx-driver/build/install/lib'
+
+include = ['.', STT_INC, BOOST_INC, MYSQL_INC]
+libdir = ['.', STT_LIB_R, BOOST_LIB, MYSQL_LIB]
+libs = ['MsgClientLib', 'CommonBase', 'textlog', 'boost_thread', 'boost_regex', 'boost_chrono', 'boost_system', 'pthread', 'rt']
+cxxflags = ['-Wall', '-g']
+
+Program('container', Glob('*.cpp'), CPPFLAGS=cxxflags, CPPPATH=include, LIBPATH=libdir, LIBS=libs)

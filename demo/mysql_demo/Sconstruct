@@ -1,0 +1,17 @@
+import os
+
+env = Environment()
+#env.Replace(CXX='c++')
+
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+cppflags = ['-g', '-Wall', '-Werror']
+cpppath = ['.', os.getenv('STT_INC'), os.getenv('BOOST_INC'), MYSQL_INC]
+libs = ['netmsg', 'Common', 'MsgClientLib', 'ServerBase', 'MySqlDB', 'CommonBase', 'Jsoncpp', 'textlog', 'boost_thread', 'boost_chrono', 'boost_system', 'pthread', 'rt', 'mysqlclient']
+libpath = ['.', os.getenv('STT_LIB'), os.getenv('BOOST_LIB'), MYSQL_LIB]
+
+srcs = Glob('*.cpp')
+
+env.Program('main', srcs, CPPFLAGS=cppflags, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
+

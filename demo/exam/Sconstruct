@@ -1,0 +1,14 @@
+import os
+
+env = Environment()
+#env.Replace(CXX='c++')
+
+cppflags = ['-g', '-Wall']
+cpppath = ['.']
+libs = []
+libpath = ['.']
+
+srcs = Glob('*.cpp')
+
+env.Program('main', srcs, CPPFLAGS=cppflags, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
+

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message ParallelMessage
+{
+	int32 item1 = 1;
+	int32 item2 = 2;
+	int32 item3 = 3;
+	int32 item4 = 4;
+	int32 item5 = 5;
+	string item6 = 6;
+	string item7 = 7;
+	string item8 = 8;
+	string item9 = 9;
+	string item10 = 10;
+}
+
+message NestedMessage
+{
+	repeated int32 item1 = 1;
+	repeated string item2 = 2;
+}
+

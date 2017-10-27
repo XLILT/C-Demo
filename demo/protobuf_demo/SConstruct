@@ -1,0 +1,36 @@
+import os
+
+def build_proto(target, source, env):
+	    import subprocess
+		    print 'we are build_proto ...'
+		       p = subprocess.Popen('protoc -cpp_out=. %s'% (source, ))
+		       p.wait()
+		       return None
+
+env = Environment()
+#env = Environment(CXX = 'clang++')
+env.Replace(CXX='clang++')
+#env.Replace(CXX='c++')
+
+env.Append(BUILDERS = {'Proto' : Builder(action = build_proto)})
+
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+#cppflags = ['-g', '-Wall', '-O0']
+cpppath = ['.', os.getenv('STT_INC'), os.getenv('BOOST_INC'), MYSQL_INC]
+libs = ['protobuf']
+libpath = ['.', os.getenv('STT_LIB'), os.getenv('BOOST_LIB'), MYSQL_LIB]
+
+env.ParseFlags('-g -Wall -O0')
+
+srcs = Glob('*.cpp') + Glob('*.cc')
+
+env.Program('main', srcs, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
+#env.Program('main', srcs, CPPFLAGS=cppflags, CPPPATH=cpppath, LIBPATH=libpath, LIBS=libs)
+env.Alias('install',
+		[
+			env.Install('/tmp', 'main')
+		]
+	)
+

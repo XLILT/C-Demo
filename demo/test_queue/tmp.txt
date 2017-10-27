@@ -1,0 +1,935 @@
+[100%] Building CXX object CMakeFiles/main.dir/main.cpp.o
+/home/vm_share/demo/test_queue/main.cpp:29:33: error: no matching function for call to 'bind'
+        thr_group.create_thread(boost::bind(&post_task, task_count, &stt_queue));
+                                ^~~~~~~~~~~
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1314:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1388:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(boost::type<R>, F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1480:5: note: candidate template ignored: couldn't infer template argument 'F'
+    BOOST_BIND(F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:35:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:43:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:54:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1) const, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:21:5: note: candidate template ignored: could not match 'R (T::*)()' against 'int'
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:31:5: note: candidate template ignored: could not match 'R (T::*)() const' against 'int'
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) () const, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1322:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1330:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1338:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1346:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1354:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1362:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1370:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1396:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1404:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1412:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1420:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1428:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1436:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1444:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1452:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:112:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7, B8, B9), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:67:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:78:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2) const, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:91:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:102:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3) const, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:115:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:126:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:139:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:150:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:163:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:174:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:187:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:198:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:211:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:222:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:44:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:55:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1) const, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:68:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:79:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2) const, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:92:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:103:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3) const, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:116:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:127:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:140:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:151:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:164:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:175:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:188:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:199:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:212:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:223:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1298:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1306:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1380:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1728:1: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+BOOST_BIND( M T::*f, A1 a1 )
+^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1520:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1528:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1536:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:46:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:57:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:68:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:79:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:90:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:101:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:17:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) ())
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:26:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1488:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1496:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1504:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1512:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1464:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1472:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:20:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:30:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) () const, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/home/vm_share/demo/test_queue/main.cpp:50:33: error: no matching function for call to 'bind'
+        thr_group.create_thread(boost::bind(&post_task, task_count, &queue));
+                                ^~~~~~~~~~~
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1314:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1388:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(boost::type<R>, F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1480:5: note: candidate template ignored: couldn't infer template argument 'F'
+    BOOST_BIND(F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:35:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:43:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:54:5: note: candidate template ignored: couldn't infer template argument 'R'
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1) const, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:21:5: note: candidate template ignored: could not match 'R (T::*)()' against 'int'
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:31:5: note: candidate template ignored: could not match 'R (T::*)() const' against 'int'
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) () const, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1322:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1330:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1338:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1346:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1354:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1362:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1370:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1396:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1404:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1412:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1420:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1428:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1436:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1444:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1452:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:112:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7, B8, B9), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:67:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:78:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2) const, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:91:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:102:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3) const, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:115:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:126:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:139:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:150:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:163:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:174:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:187:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:198:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:211:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:222:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:44:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1), A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:55:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1) const, A1 a1, A2 a2)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:68:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:79:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2) const, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:92:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:103:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3) const, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:116:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:127:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:140:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:151:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:164:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:175:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:188:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:199:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:212:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf2_cc.hpp:223:5: note: candidate function template not viable: requires 11 arguments, but 3 were provided
+    BOOST_BIND(boost::type<Rt2>, R (BOOST_BIND_MF_CC T::*f) (B1, B2, B3, B4, B5, B6, B7, B8) const, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1298:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1306:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1380:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(boost::type<R>, F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1728:1: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+BOOST_BIND( M T::*f, A1 a1 )
+^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1520:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1528:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1536:5: note: candidate function template not viable: requires 10 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8, A9 a9)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:46:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3), A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:57:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4), A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:68:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:79:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:90:5: note: candidate function template not viable: requires 8 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:101:5: note: candidate function template not viable: requires 9 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1, B2, B3, B4, B5, B6, B7, B8), A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6, A7 a7, A8 a8)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:17:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) ())
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_cc.hpp:26:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(BOOST_BIND_ST R (BOOST_BIND_CC *f) (B1), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1488:5: note: candidate function template not viable: requires 4 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1496:5: note: candidate function template not viable: requires 5 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1504:5: note: candidate function template not viable: requires 6 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1512:5: note: candidate function template not viable: requires 7 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1464:5: note: candidate function template not viable: requires single argument 'f', but 3 arguments were provided
+    BOOST_BIND(F f)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1472:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(F f, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:20:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) (), A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind_mf_cc.hpp:30:5: note: candidate function template not viable: requires 2 arguments, but 3 were provided
+    BOOST_BIND(R (BOOST_BIND_MF_CC T::*f) () const, A1 a1)
+    ^
+/root/.jenkins/jobs/stt_servers/workspace/common_inc/boost/boost/bind/bind.hpp:1291:20: note: expanded from macro 'BOOST_BIND'
+#define BOOST_BIND bind
+                   ^
+2 errors generated.
+make[2]: *** [CMakeFiles/main.dir/main.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/main.dir/all] 错误 2
+make: *** [all] 错误 2

@@ -1,0 +1,32 @@
+env = Environment()
+
+env['CC'] = 'clang'
+
+def build_assembly(target, source, env):
+    # A function that will write a 'prefix=$SOURCE'
+    # string into the file name specified as the
+    # $TARGET.
+    #f = open(str(target[0]), 'wb')
+    #f.write('prefix=' + source[0].get_contents())
+	#print('going to build assembly files')
+    #f = 1
+    #print('going to build assembly files')
+    #g = 2
+    import os
+    import sys
+    #cmd = 'gcc -std=c99 -S -o mian.s main.c'
+    #cmd = 'gcc'
+    #print(vars(env))
+    #print(type(source[0]))
+    #cmd = str(env['CC']).join(" -std=c99 -S -o ").join(target).join(" ").join(source)
+    srcs = []
+    for src in source:
+        srcs.append(str(src))
+
+    cmd = ''.join([env['CC'], ' -std=c99 -S -o ', str(target[0]) + ' ', ' '.join(srcs)])
+    sys.stdout.write(cmd)
+    os.system(cmd)
+
+env['BUILDERS']['Assembly'] = Builder(action = build_assembly)
+
+env.Assembly('main.s', ['main.c'])

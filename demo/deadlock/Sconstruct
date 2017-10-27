@@ -1,0 +1,14 @@
+STT_INC = '/home/zhang/stt/addon/inc'
+STT_LIB = '/home/zhang/stt/addon/lib/release'
+BOOST_INC = '/home/zhang/stt/boost/include'
+BOOST_LIB = '/home/zhang/stt/boost/lib'
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+flags = ['-g', '-Wall']
+include = ['.', STT_INC, BOOST_INC, MYSQL_INC]
+libs = ['netmsg', 'Common', 'MsgClientLib', 'ServerBase', 'CommonBase', 'MySqlDB', 'Jsoncpp', 'textlog', 'boost_thread', 'boost_chrono', 'boost_system', 'pthread', 'rt', 'mysqlclient']
+libdir = ['.', STT_LIB, BOOST_LIB, MYSQL_LIB]
+
+Program('main', Glob('*.cpp'), CPPFLAGS=flags, CPPPATH=include, LIBPATH=libdir, LIBS=libs)
+

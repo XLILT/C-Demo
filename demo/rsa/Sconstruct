@@ -1,0 +1,19 @@
+flags = ['-g', '-Wall']
+libs = ['ssl']
+
+STT_INC = '/home/zhang/stt/addon/inc'
+STT_LIB = '/home/zhang/stt/addon/lib/release'
+BOOST_INC = '/home/zhang/stt/boost/include'
+BOOST_LIB = '/home/zhang/stt/boost/lib'
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+include_dy = ['.', STT_INC, BOOST_INC, MYSQL_INC]
+libs_dy = ['Common', 'boost_thread', 'boost_chrono', 'boost_system', 'pthread', 'rt', 'mysqlclient']
+libdir_dy = ['.', STT_LIB, BOOST_LIB, MYSQL_LIB]
+
+env = Environment(CXXFLAGS = flags, LIBS = libs)
+env.Program('rsa', ['rsa.cpp', 'bio.cpp'])
+
+env = Environment(CXXFLAGS = flags, CPPPATH=include_dy, LIBPATH=libdir_dy, LIBS=libs_dy)
+env.Program("dy_common", "dy_common.cpp")

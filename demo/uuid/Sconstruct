@@ -1,0 +1,9 @@
+include = ['/home/zhang/stt/boost/include']
+libs = ['uuid']
+libs_boost = ['boost_chrono', 'boost_system', 'pthread', 'rt']
+libdir = '/root/mongo-cxx-driver/mongo-cxx-driver/build/install/lib:/home/zhang/stt/boost/lib'
+cxxflags = ['-Wall', '-g']
+
+Program('main', 'main.cpp', CPPFLAGS=cxxflags, LIBS=libs)
+Program('main_boost', 'main_boost.cpp', CPPPATH=include, CPPFLAGS=cxxflags, LIBPATH=libdir, LIBS=libs_boost)
+

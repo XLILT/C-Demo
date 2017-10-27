@@ -1,0 +1,16 @@
+import os
+
+env = Environment()
+#env.Replace(CXX='c++')
+
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+cflags = ['-g', '-Wall', '-O0']
+cpath = ['.', os.getenv('STT_INC'), os.getenv('BOOST_INC'), MYSQL_INC]
+libs = []
+libpath = ['.', os.getenv('STT_LIB') + 'release', os.getenv('BOOST_LIB'), MYSQL_LIB]
+
+srcs = ['server.c']
+
+env.Program('WSServer', srcs, CFLAGS=cflags, CPATH=cpath, LIBPATH=libpath, LIBS=libs)

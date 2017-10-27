@@ -1,0 +1,16 @@
+import os
+
+STT_INC = os.environ.get('STT_INC')
+STT_LIB = os.environ.get('STT_LIB') + 'release'
+BOOST_INC = os.environ.get('BOOST_INC')
+BOOST_LIB = os.environ.get('BOOST_LIB')
+MYSQL_INC = '/usr/include/mysql'
+MYSQL_LIB = '/usr/lib64/mysql'
+
+flags = ['-g', '-Wall', '-O1']
+include = ['.', STT_INC, BOOST_INC, MYSQL_INC]
+libs = ['netmsg', 'Common', 'MsgClientLib', 'ServerBase', 'CommonBase', 'MySqlDB', 'Jsoncpp', 'textlog', 'boost_thread', 'boost_chrono', 'boost_system', 'pthread', 'rt', 'mysqlclient']
+libdir = ['.', STT_LIB, BOOST_LIB, MYSQL_LIB]
+
+Program("main", "main.cpp", CPPFLAGS=flags, CPPPATH=include, LIBPATH=libdir, LIBS=libs)
+

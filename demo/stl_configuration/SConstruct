@@ -1,0 +1,7 @@
+env = Environment()
+
+env['CXX'] = 'g++'
+env['CPPFLAGS'] = ['-g', '-Wall']
+
+env.Program('main', Glob('*.cpp'))
+

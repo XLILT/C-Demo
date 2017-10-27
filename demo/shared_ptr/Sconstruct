@@ -1,0 +1,4 @@
+BOOST_INC = '/home/zhang/stt/boost/include'
+BOOST_LIB = '/home/zhang/stt/boost/lib'
+
+Program('main', Glob('*.cpp'), CPPFLAGS=['-g', '-Wall', '-std=c++0x'], CPPPATH=[BOOST_INC], LIBPATH=[BOOST_LIB], LIBS=['boost_thread', 'boost_chrono', 'boost_system', 'pthread', 'rt'])

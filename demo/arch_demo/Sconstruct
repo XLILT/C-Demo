@@ -1,0 +1,4 @@
+Library('mylib', ['mylib.cpp'])
+Program('main', ['main.cpp'], LIBS=['mylib'], LIBPATH=['.'])
+
+

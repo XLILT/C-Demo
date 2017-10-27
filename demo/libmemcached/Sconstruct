@@ -1,0 +1,1 @@
+Program('main', Glob('*.cpp'), CPPFLAGS='-g -std=c++0x', LIBS='memcached')

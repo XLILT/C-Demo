@@ -1,0 +1,4 @@
+
+SOURCE_FILES=['main.cpp', 'my_func.cpp']
+
+Program('main', SOURCE_FILES)

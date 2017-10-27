@@ -1,0 +1,22 @@
+import os
+
+env = Environment()
+
+env['CXX'] = 'clang++'
+
+def protoc(target, source, env):
+	cmd = "protoc --cpp_out=."
+	for src in source:
+		cmd +=  " " + str(src)
+
+	print(cmd)
+	return os.system(cmd)
+
+env.Append(BUILDERS = {'Protoc': Builder(action = protoc, src_suffix = ".proto")})
+
+env.Protoc(['a.pb.h', 'a.pb.cc'], 'a.proto')
+
+env.Program('main', [env.Object(Glob('*.cc')),
+			         env.Object(Glob('*.cpp')),
+			         '/usr/local/lib/libprotobuf.a'])
+

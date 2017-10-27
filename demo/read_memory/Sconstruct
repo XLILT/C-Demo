@@ -1,0 +1,4 @@
+env = Environment()
+env.Replace(CXXFLAGS = '-g')
+
+Program("main.cpp")

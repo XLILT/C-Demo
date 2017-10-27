@@ -1,0 +1,1 @@
+/home/vm_share/demo/cmake_demo/./bin/main
